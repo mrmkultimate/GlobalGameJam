@@ -3,20 +3,24 @@ using System.Collections;
 
 public class HeadFollowing : MonoBehaviour {
 	public Transform headTransform;
-	float timePassed=0.0f;
-	bool warp=false;
+	public float timePassed=0.0f;
+	public bool warp=false;
+	public Vector3 offset;
+	Vector3 startingPosition;
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		timePassed+=Time.deltaTime;
-		if(timePassed>2.0f){
+		if((timePassed>2.0f)&&(!warp)){
+			startingPosition = transform.position;
 			warp = true;
 		}
-		if(warp)
-			transform.localPosition = headTransform.localPosition+new Vector3(-0.9203f,0,0);
+		if(warp){
+			transform.position = headTransform.localPosition + startingPosition+offset;
+		}
 	}
 }
