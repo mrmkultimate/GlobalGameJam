@@ -161,6 +161,19 @@ public class PickUp : MonoBehaviour {
 				}
 			}
 
+		}if(other.tag == "Piston"){
+			if(StaticVariables.inMortarEye&&tag == "Eyeball"){
+				crushedAmount+=Time.deltaTime;
+			}
+			if(StaticVariables.inMortarSalt&&tag == "Salt"){
+				crushedAmount+=Time.deltaTime;
+			}
+			if(StaticVariables.inMortarHumour&&tag == "Humour"){
+				crushedAmount+=Time.deltaTime;
+			}
+			if(StaticVariables.inMortarFlower&&tag == "Flower"){
+				crushedAmount+=Time.deltaTime;
+			}
 		}
 	}
 	void OnTriggerExit(Collider other){
@@ -289,6 +302,8 @@ public class PickUp : MonoBehaviour {
 			}
 
 		}
+
+
 
 	}
 }
