@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Generator : MonoBehaviour {
 	public GameObject SaltPrefab;
-	float timeUntilSpawn = 20.0f;
+	float timeUntilSpawn = 30.0f;
 	float timeSinceMoved = 0.0f;
 	// Use this for initialization
 	void Start () {

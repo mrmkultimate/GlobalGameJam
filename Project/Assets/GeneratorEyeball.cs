@@ -5,7 +5,7 @@ public class GeneratorEyeball : MonoBehaviour {
 
 	
 	public GameObject EyeballPrefab;
-	float timeUntilSpawn = 20.0f;
+	float timeUntilSpawn = 30.0f;
 	float timeSinceMoved = 0.0f;
 	// Use this for initialization
 	void Start () {

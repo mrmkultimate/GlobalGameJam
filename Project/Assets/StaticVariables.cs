@@ -47,6 +47,13 @@ public class StaticVariables : MonoBehaviour {
 	public static bool DestroyHumour = false;
 	public static bool DestroyFlower = false;
 
+	public static bool HealthPotionCreated = false;
+	public static bool ManaPotionCreated = false;
+	public static bool AntidotePotionCreated = false;
+	public static bool AgilityPotionCreated = false;
+	public static bool SalvePotionCreated = false;
+	public static bool PomadePotionCreated = false;
+	public static bool LaxativePotionCreated = false;
 
 
 }
