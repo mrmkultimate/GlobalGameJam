@@ -12,10 +12,18 @@ Platform assembly: C:\Users\Matthew Kruse\Documents\GitHub\GlobalGameJam\Builds\
 Loading C:\Users\Matthew Kruse\Documents\GitHub\GlobalGameJam\Builds\Apothequery_V1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Matthew Kruse\Documents\GitHub\GlobalGameJam\Builds\Apothequery_V1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Matthew Kruse\Documents\GitHub\GlobalGameJam\Builds\Apothequery_V1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.121 seconds
+- Completed reload, in  0.119 seconds
 <RI> Initializing input.
 <RI> Input initialized.
-desktop: 1366x768 60Hz; virtual: 3286x1080 at -1920,-170
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 Platform assembly: C:\Users\Matthew Kruse\Documents\GitHub\GlobalGameJam\Builds\Apothequery_V1_Data\Managed\System.Core.dll (this message is harmless)
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
 Platform assembly: C:\Users\Matthew Kruse\Documents\GitHub\GlobalGameJam\Builds\Apothequery_V1_Data\Managed\System.dll (this message is harmless)
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
