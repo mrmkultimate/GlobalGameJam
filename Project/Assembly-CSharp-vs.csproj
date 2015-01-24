@@ -46,6 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Generator.cs" />
+     <Compile Include="Assets\HeadFollowing.cs" />
      <Compile Include="Assets\LeftArmRotation2.cs" />
      <Compile Include="Assets\Left_Arm_Rotation.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
