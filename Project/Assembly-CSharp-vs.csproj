@@ -46,7 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BurnerSound.cs" />
+     <Compile Include="Assets\CrunchingSound.cs" />
      <Compile Include="Assets\Generator.cs" />
+     <Compile Include="Assets\GeneratorEyeball.cs" />
+     <Compile Include="Assets\GeneratorFlower.cs" />
      <Compile Include="Assets\HeadFollowing.cs" />
      <Compile Include="Assets\LeftArmRotation2.cs" />
      <Compile Include="Assets\Left_Arm_Rotation.cs" />
@@ -67,6 +71,7 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRUGUI.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRVisionGuide.cs" />
      <Compile Include="Assets\PickUp.cs" />
+     <Compile Include="Assets\PickUpPiston.cs" />
      <Compile Include="Assets\Right_Arm_Rotation.cs" />
      <Compile Include="Assets\Sounds.cs" />
      <Compile Include="Assets\SoundsL.cs" />

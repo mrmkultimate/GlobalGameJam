@@ -41,5 +41,12 @@ public class StaticVariables : MonoBehaviour {
 	public static bool inPelicanSalt = false;
 	public static bool inPelicanHumour = false;
 	public static bool inPelicanFlower = false;
-	
+
+	public static bool DestroySalt = false;
+	public static bool DestroyEye = false;
+	public static bool DestroyHumour = false;
+	public static bool DestroyFlower = false;
+
+
+
 }

@@ -264,6 +264,10 @@ public class PickUp : MonoBehaviour {
 			if(StaticVariables.inBurnerEye){
 				burnedAmount+=Time.deltaTime;
 			}
+			if(StaticVariables.DestroyEye){
+				StaticVariables.DestroyEye = false;
+				Destroy(gameObject);
+			}
 
 		}
 		if(tag == "Salt"){
@@ -276,7 +280,10 @@ public class PickUp : MonoBehaviour {
 			if(StaticVariables.inBurnerSalt){
 				burnedAmount+=Time.deltaTime;
 			}
-
+			if(StaticVariables.DestroySalt){
+				StaticVariables.DestroySalt = false;
+				Destroy(gameObject);
+			}
 		}
 		if(tag == "Humour"){
 			if(StaticVariables.inPelicanHumour){
@@ -287,6 +294,10 @@ public class PickUp : MonoBehaviour {
 			}
 			if(StaticVariables.inBurnerHumour){
 				burnedAmount+=Time.deltaTime;
+			}
+			if(StaticVariables.DestroyHumour){
+				StaticVariables.DestroyHumour = false;
+				Destroy(gameObject);
 			}
 
 		}
@@ -300,7 +311,10 @@ public class PickUp : MonoBehaviour {
 			if(StaticVariables.inBurnerFlower){
 				burnedAmount+=Time.deltaTime;
 			}
-
+			if(StaticVariables.DestroyFlower){
+				StaticVariables.DestroyFlower = false;
+				Destroy(gameObject);
+			}
 		}
 
 

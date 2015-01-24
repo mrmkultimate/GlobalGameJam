@@ -1,14 +1,19 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SoundsR.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PickUp.cs">
     <Files>
-      <File FileName="Assets\PickUp.cs" Line="288" Column="7" />
+      <File FileName="Assets\SoundsL.cs" Line="12" Column="5" />
+      <File FileName="Assets\PickUp.cs" Line="1" Column="1" />
       <File FileName="Assets\HeadFollowing.cs" Line="1" Column="1" />
       <File FileName="Assets\Generator.cs" Line="1" Column="1" />
       <File FileName="Assets\Left_Arm_Rotation.cs" Line="1" Column="1" />
       <File FileName="Assets\StaticVariables.cs" Line="1" Column="1" />
-      <File FileName="Assets\SoundsL.cs" Line="17" Column="6" />
-      <File FileName="Assets\SoundsR.cs" Line="17" Column="33" />
+      <File FileName="Assets\SoundsR.cs" Line="1" Column="1" />
+      <File FileName="Assets\BurnerSound.cs" Line="1" Column="1" />
+      <File FileName="Assets\CrunchingSound.cs" Line="1" Column="1" />
+      <File FileName="Assets\PickUpPiston.cs" Line="1" Column="1" />
+      <File FileName="Assets\GeneratorFlower.cs" Line="5" Column="1" />
+      <File FileName="Assets\GeneratorEyeball.cs" Line="17" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
