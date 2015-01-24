@@ -68,6 +68,7 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRVisionGuide.cs" />
      <Compile Include="Assets\PickUp.cs" />
      <Compile Include="Assets\Right_Arm_Rotation.cs" />
+     <Compile Include="Assets\StaticVariables.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
      <None Include="Assets\OVR\Shaders\TextShader3D.shader" />

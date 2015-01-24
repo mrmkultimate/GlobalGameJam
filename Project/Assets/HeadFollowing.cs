@@ -15,12 +15,14 @@ public class HeadFollowing : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timePassed+=Time.deltaTime;
-		if((timePassed>2.0f)&&(!warp)){
+		if((timePassed>1.0f)&&(!warp)){
 			startingPosition = transform.position;
 			warp = true;
 		}
 		if(warp){
 			transform.position = headTransform.localPosition + startingPosition+offset;
 		}
+
+
 	}
 }
