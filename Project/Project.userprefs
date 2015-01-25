@@ -1,20 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Right_Arm_Rotation.cs">
     <Files>
-      <File FileName="Assets\Scripts\PickUp.cs" Line="481" Column="31" />
-      <File FileName="Assets\Scripts\GeneratorEyeball.cs" Line="19" Column="63" />
-      <File FileName="Assets\Scripts\Generator.cs" Line="8" Column="32" />
-      <File FileName="Assets\Scripts\GeneratorFlower.cs" Line="17" Column="66" />
-      <File FileName="Assets\GeneratorHumour.cs" Line="16" Column="66" />
+      <File FileName="Assets\Scripts\Right_Arm_Rotation.cs" Line="47" Column="94" />
+      <File FileName="Assets\Scripts\PickUp.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GeneratorEyeball.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Generator.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GeneratorFlower.cs" Line="1" Column="1" />
+      <File FileName="Assets\GeneratorHumour.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PickUpPiston.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\StaticVariables.cs" Line="1" Column="1" />
       <File FileName="Assets\GeneratorPiston.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\SoundsR.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\SoundsL.cs" Line="1" Column="1" />
-      <File FileName="Assets\PelicanSounds.cs" Line="51" Column="25" />
-      <File FileName="Assets\Scripts\Left_Arm_Rotation.cs" Line="10" Column="52" />
-      <File FileName="Assets\Scripts\Right_Arm_Rotation.cs" Line="47" Column="46" />
+      <File FileName="Assets\PelicanSounds.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Left_Arm_Rotation.cs" Line="47" Column="96" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

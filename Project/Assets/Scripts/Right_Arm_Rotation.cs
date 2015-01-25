@@ -44,7 +44,7 @@ public class Right_Arm_Rotation : MonoBehaviour {
 				CurrentRotation += new Vector2(TravelRotation.x*RotationSpeed*Time.deltaTime,TravelRotation.y*RotationSpeed*Time.deltaTime);
 			}
 			//transform.localEulerAngles = new Vector3(90*CurrentRotation.y,0,-90+90*CurrentRotation.x);
-			transform.localEulerAngles = new Vector3(-90*CurrentRotation.y,0,-90*CurrentRotation.x+90) + RightArmOffset;
+			transform.localEulerAngles = new Vector3(-90*CurrentRotation.y,0,-90*CurrentRotation.x*1.2f+90) + RightArmOffset;
 
 			//transform.localEulerAngles = new Vector3(transform.localEulerAngles.x+Input.GetAxis ("RotationX"), transform.localEulerAngles.y+Input.GetAxis ("Vertical"),transform.localEulerAngles.z+Input.GetAxis("Horizontal"));
 			//transform.Rotate (Input.GetAxis ("RotationX"),Input.GetAxis ("Vertical"),Input.GetAxis ("Horizontal"));
