@@ -60,5 +60,12 @@ public class StaticVariables : MonoBehaviour {
 	public static bool PomadePotionCreated = false;
 	public static bool LaxativePotionCreated = false;
 
+	public static bool HealthPotionCreatedSound = false;
+	public static bool ManaPotionCreatedSound = false;
+	public static bool AntidotePotionCreatedSound = false;
+	public static bool AgilityPotionCreatedSound = false;
+	public static bool SalvePotionCreatedSound = false;
+	public static bool PomadePotionCreatedSound = false;
+	public static bool LaxativePotionCreatedSound = false;
 
 }

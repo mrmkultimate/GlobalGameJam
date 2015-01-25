@@ -13,7 +13,7 @@ public class Generator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timeSinceMoved += Time.deltaTime;
-		if(timeSinceMoved>timeUntilSpawn){
+		if(timeSinceMoved>timeUntilSpawn||StaticVariables.DestroySalt){
 			StaticVariables.DestroySalt = true;
 			Instantiate(SaltPrefab,transform.position,transform.rotation);
 			timeSinceMoved = 0.0f;

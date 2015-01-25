@@ -64,6 +64,7 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRUGUI.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRVisionGuide.cs" />
+     <Compile Include="Assets\PelicanSounds.cs" />
      <Compile Include="Assets\Scripts\Agility.cs" />
      <Compile Include="Assets\Scripts\Antidote.cs" />
      <Compile Include="Assets\Scripts\BurnerSound.cs" />

@@ -14,7 +14,7 @@ public class GeneratorFlower : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timeSinceMoved += Time.deltaTime;
-		if(timeSinceMoved>timeUntilSpawn){
+		if(timeSinceMoved>timeUntilSpawn||StaticVariables.DestroyFlower){
 			StaticVariables.DestroyFlower = true;
 			Instantiate(FlowerPrefab,transform.position,transform.rotation);
 			timeSinceMoved = 0.0f;

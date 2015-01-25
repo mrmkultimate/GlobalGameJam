@@ -16,7 +16,7 @@ public class GeneratorEyeball : MonoBehaviour {
 	void Update () {
 
 			timeSinceMoved += Time.deltaTime;
-			if(timeSinceMoved>timeUntilSpawn){
+		if(timeSinceMoved>timeUntilSpawn||StaticVariables.DestroyEye){
 				StaticVariables.DestroyEye = true;
 				Instantiate(EyeballPrefab,transform.position,transform.rotation);
 				timeSinceMoved = 0.0f;
