@@ -1,14 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PickUp.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Generator.cs">
     <Files>
-      <File FileName="Assets\PickUp.cs" Line="325" Column="23" />
-      <File FileName="Assets\StaticVariables.cs" Line="56" Column="51" />
-      <File FileName="Assets\BurnerSound.cs" Line="1" Column="1" />
-      <File FileName="Assets\CrunchingSound.cs" Line="13" Column="4" />
-      <File FileName="Assets\GeneratorEyeball.cs" Line="8" Column="31" />
-      <File FileName="Assets\GeneratorFlower.cs" Line="7" Column="27" />
-      <File FileName="Assets\Generator.cs" Line="23" Column="3" />
+      <File FileName="Assets\Scripts\Health.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Generator.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

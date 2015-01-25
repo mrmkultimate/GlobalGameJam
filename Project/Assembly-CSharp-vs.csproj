@@ -46,19 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Agility.cs" />
-     <Compile Include="Assets\Antidote.cs" />
-     <Compile Include="Assets\BurnerSound.cs" />
-     <Compile Include="Assets\CrunchingSound.cs" />
-     <Compile Include="Assets\Generator.cs" />
-     <Compile Include="Assets\GeneratorEyeball.cs" />
-     <Compile Include="Assets\GeneratorFlower.cs" />
-     <Compile Include="Assets\HeadFollowing.cs" />
-     <Compile Include="Assets\Health.cs" />
-     <Compile Include="Assets\Laxative.cs" />
-     <Compile Include="Assets\LeftArmRotation2.cs" />
-     <Compile Include="Assets\Left_Arm_Rotation.cs" />
-     <Compile Include="Assets\Mana.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRDisplay.cs" />
@@ -75,15 +62,28 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRUGUI.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRVisionGuide.cs" />
-     <Compile Include="Assets\PickUp.cs" />
-     <Compile Include="Assets\PickUpPiston.cs" />
-     <Compile Include="Assets\Pomade.cs" />
-     <Compile Include="Assets\Right_Arm_Rotation.cs" />
-     <Compile Include="Assets\Salve.cs" />
-     <Compile Include="Assets\Sounds.cs" />
-     <Compile Include="Assets\SoundsL.cs" />
-     <Compile Include="Assets\SoundsR.cs" />
-     <Compile Include="Assets\StaticVariables.cs" />
+     <Compile Include="Assets\Scripts\Agility.cs" />
+     <Compile Include="Assets\Scripts\Antidote.cs" />
+     <Compile Include="Assets\Scripts\BurnerSound.cs" />
+     <Compile Include="Assets\Scripts\CrunchingSound.cs" />
+     <Compile Include="Assets\Scripts\Generator.cs" />
+     <Compile Include="Assets\Scripts\GeneratorEyeball.cs" />
+     <Compile Include="Assets\Scripts\GeneratorFlower.cs" />
+     <Compile Include="Assets\Scripts\HeadFollowing.cs" />
+     <Compile Include="Assets\Scripts\Health.cs" />
+     <Compile Include="Assets\Scripts\Laxative.cs" />
+     <Compile Include="Assets\Scripts\LeftArmRotation2.cs" />
+     <Compile Include="Assets\Scripts\Left_Arm_Rotation.cs" />
+     <Compile Include="Assets\Scripts\Mana.cs" />
+     <Compile Include="Assets\Scripts\PickUp.cs" />
+     <Compile Include="Assets\Scripts\PickUpPiston.cs" />
+     <Compile Include="Assets\Scripts\Pomade.cs" />
+     <Compile Include="Assets\Scripts\Right_Arm_Rotation.cs" />
+     <Compile Include="Assets\Scripts\Salve.cs" />
+     <Compile Include="Assets\Scripts\Sounds.cs" />
+     <Compile Include="Assets\Scripts\SoundsL.cs" />
+     <Compile Include="Assets\Scripts\SoundsR.cs" />
+     <Compile Include="Assets\Scripts\StaticVariables.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
      <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
