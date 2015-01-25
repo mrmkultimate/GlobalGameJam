@@ -1,12 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FadeIn.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GeneratorHumour.cs">
     <Files>
-      <File FileName="Assets\Scripts\FadeIn.cs" Line="43" Column="30" />
-      <File FileName="..\..\..\..\..\Public\Documents\Unity Projects\2DGame\Assets\Scripts\Door.cs" Line="1" Column="1" />
-      <File FileName="..\..\..\..\..\Public\Documents\Unity Projects\2DGame\Assets\Scripts\PlayerCollisions.cs" Line="7" Column="23" />
-      <File FileName="..\..\..\..\..\Public\Documents\Unity Projects\2DGame\Assets\Scripts\PlayerControl.cs" Line="1" Column="1" />
-      <File FileName="..\..\..\..\..\Public\Documents\Unity Projects\2DGame\Assets\Scripts\MenuScript.cs" Line="33" Column="4" />
+      <File FileName="Assets\Scripts\GeneratorEyeball.cs" Line="18" Column="4" />
+      <File FileName="Assets\Scripts\Generator.cs" Line="5" Column="2" />
+      <File FileName="Assets\Scripts\GeneratorFlower.cs" Line="22" Column="169" />
+      <File FileName="Assets\GeneratorHumour.cs" Line="10" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
