@@ -512,6 +512,9 @@ public class PickUp : MonoBehaviour {
 			StaticVariables.DestroySalt = true;
 
 			StaticVariables.LaxativePotionCreated = true;
+			
+			StaticVariables.LaxativePotionCreatedSound = true;
+
 			PelicanSound.Play();
 		}
 		else if(StaticVariables.inPelicanHumour&&StaticVariables.heatedHumour&&StaticVariables.inPelicanFlower&&StaticVariables.crushedFlower){
@@ -524,6 +527,7 @@ public class PickUp : MonoBehaviour {
 			StaticVariables.DestroyHumour = true;
 			StaticVariables.DestroyFlower = true;
 			StaticVariables.PomadePotionCreated = true;
+			StaticVariables.PomadePotionCreatedSound = true;
 			PelicanSound.Play();
 		}
 		else if(StaticVariables.inPelicanSalt&&StaticVariables.inPelicanFlower&&StaticVariables.heatedFlower&&StaticVariables.crushedSalt){
@@ -536,6 +540,7 @@ public class PickUp : MonoBehaviour {
 			StaticVariables.DestroySalt = true;
 			StaticVariables.DestroyFlower = true;
 			StaticVariables.SalvePotionCreated = true;
+			StaticVariables.SalvePotionCreatedSound = true;
 			PelicanSound.Play();
 		}
 		else if(StaticVariables.inPelicanEye&&StaticVariables.inPelicanFlower&&StaticVariables.heatedFlower&&StaticVariables.crushedEye){
@@ -548,6 +553,7 @@ public class PickUp : MonoBehaviour {
 			StaticVariables.DestroyEye = true;
 			StaticVariables.DestroyFlower = true;
 			StaticVariables.AgilityPotionCreated = true;
+			StaticVariables.AgilityPotionCreatedSound = true;
 			PelicanSound.Play();
 		}
 		else if(StaticVariables.inPelicanFlower&&StaticVariables.heatedFlower){
@@ -557,6 +563,7 @@ public class PickUp : MonoBehaviour {
 
 			StaticVariables.DestroyFlower = true;
 			StaticVariables.AntidotePotionCreated = true;
+			StaticVariables.AntidotePotionCreatedSound = true;
 			PelicanSound.Play();
 		}
 		else if(StaticVariables.inPelicanEye&&StaticVariables.heatedEye){
@@ -566,6 +573,7 @@ public class PickUp : MonoBehaviour {
 
 			StaticVariables.DestroyEye = true;
 			StaticVariables.ManaPotionCreated = true;
+			StaticVariables.ManaPotionCreatedSound = true;
 			PelicanSound.Play();
 		}
 		else if(StaticVariables.inPelicanFlower&&StaticVariables.crushedFlower){
@@ -575,6 +583,7 @@ public class PickUp : MonoBehaviour {
 			StaticVariables.DestroyFlower = true;
 
 			StaticVariables.HealthPotionCreated = true;
+			StaticVariables.HealthPotionCreatedSound = true;
 			PelicanSound.Play();
 		}
 
