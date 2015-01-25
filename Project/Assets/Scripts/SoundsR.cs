@@ -9,10 +9,10 @@ public class SoundsR : MonoBehaviour {
 	void OnTriggerStay(Collider other){
 		if(other.tag == "Flower"||other.tag == "Salt"||other.tag == "Humous"||other.tag == "Eyeball"){
 			if(Input.GetButtonDown ("Fire1")){
-				Pickup.Play ();
+				//Pickup.Play ();
 			}
 			if(Input.GetButtonUp ("Fire1")){
-				drop.Play();
+				//drop.Play();
 			}
 
 		}

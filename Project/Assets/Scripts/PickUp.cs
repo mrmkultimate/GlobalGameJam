@@ -22,6 +22,16 @@ public class PickUp : MonoBehaviour {
 	public Texture tex2;
 	public Transform pelicanTransform;
 
+	public AudioSource GrindingSound;
+	public AudioSource BurningSound;
+	public AudioSource BurntSound;
+	public AudioSource PickUpSound;
+	public AudioSource DropSound;
+	public AudioSource DropInMortarSound;
+	public AudioSource DropInPelican;
+	public AudioSource PelicanSound;
+
+
 	Material newMaterial;
 
 	void OnTriggerEnter(Collider other) {
@@ -36,19 +46,31 @@ public class PickUp : MonoBehaviour {
 		if(other.tag == "PlayerRight"){
 			if(Input.GetButton ("Fire1")){
 
-				if((tag == "Eyeball")&&(!(StaticVariables.pickedUpSaltRight||StaticVariables.pickedUpHumourRight||StaticVariables.pickedUpFlowerRight))){
+				if((tag == "Eyeball")&&(!(StaticVariables.pickedUpPistonRight||StaticVariables.pickedUpSaltRight||StaticVariables.pickedUpHumourRight||StaticVariables.pickedUpFlowerRight))){
+					if(!StaticVariables.pickedUpEyeRight){
+						PickUpSound.Play ();
+					}
 					StaticVariables.pickedUpEyeRight = true;
 					pickedUpRight = true;
 				}
-				if((tag == "Salt")&&(!(StaticVariables.pickedUpEyeRight||StaticVariables.pickedUpHumourRight||StaticVariables.pickedUpFlowerRight))){
+				if((tag == "Salt")&&(!(StaticVariables.pickedUpPistonRight||StaticVariables.pickedUpEyeRight||StaticVariables.pickedUpHumourRight||StaticVariables.pickedUpFlowerRight))){
+					if(!StaticVariables.pickedUpSaltRight){
+						PickUpSound.Play ();
+					}
 					StaticVariables.pickedUpSaltRight = true;
 					pickedUpRight = true;
 				}
-				if((tag == "Humour")&&(!(StaticVariables.pickedUpEyeRight||StaticVariables.pickedUpSaltRight||StaticVariables.pickedUpFlowerRight))){
+				if((tag == "Humour")&&(!(StaticVariables.pickedUpPistonRight||StaticVariables.pickedUpEyeRight||StaticVariables.pickedUpSaltRight||StaticVariables.pickedUpFlowerRight))){
+					if(!StaticVariables.pickedUpHumourRight){
+						PickUpSound.Play ();
+					}
 					StaticVariables.pickedUpHumourRight = true;
 					pickedUpRight = true;
 				}
-				if((tag == "Flower")&&(!(StaticVariables.pickedUpEyeRight||StaticVariables.pickedUpSaltRight||StaticVariables.pickedUpHumourRight))){
+				if((tag == "Flower")&&(!(StaticVariables.pickedUpPistonRight||StaticVariables.pickedUpEyeRight||StaticVariables.pickedUpSaltRight||StaticVariables.pickedUpHumourRight))){
+					if(!StaticVariables.pickedUpFlowerRight){
+						PickUpSound.Play ();
+					}
 					StaticVariables.pickedUpFlowerRight = true;
 					pickedUpRight = true;
 				}
@@ -72,19 +94,31 @@ public class PickUp : MonoBehaviour {
 		}
 		if(other.tag == "PlayerLeft"){
 			if(Input.GetButton ("Fire2")){
-				if((tag == "Eyeball")&&(!(StaticVariables.pickedUpSaltLeft||StaticVariables.pickedUpHumourLeft||StaticVariables.pickedUpFlowerLeft))){
+				if((tag == "Eyeball")&&(!(StaticVariables.pickedUpPistonLeft||StaticVariables.pickedUpSaltLeft||StaticVariables.pickedUpHumourLeft||StaticVariables.pickedUpFlowerLeft))){
+					if(!StaticVariables.pickedUpEyeLeft){
+						PickUpSound.Play ();
+					}
 					StaticVariables.pickedUpEyeLeft = true;
 					pickedUpLeft = true;
 				}
-				if((tag == "Salt")&&(!(StaticVariables.pickedUpEyeLeft||StaticVariables.pickedUpHumourLeft||StaticVariables.pickedUpFlowerLeft))){
+				if((tag == "Salt")&&(!(StaticVariables.pickedUpPistonLeft||StaticVariables.pickedUpEyeLeft||StaticVariables.pickedUpHumourLeft||StaticVariables.pickedUpFlowerLeft))){
+					if(!StaticVariables.pickedUpSaltLeft){
+						PickUpSound.Play ();
+					}
 					StaticVariables.pickedUpSaltLeft = true;
 					pickedUpLeft = true;
 				}
-				if((tag == "Humour")&&(!(StaticVariables.pickedUpEyeLeft||StaticVariables.pickedUpSaltLeft||StaticVariables.pickedUpFlowerLeft))){
+				if((tag == "Humour")&&(!(StaticVariables.pickedUpPistonLeft||StaticVariables.pickedUpEyeLeft||StaticVariables.pickedUpSaltLeft||StaticVariables.pickedUpFlowerLeft))){
+					if(!StaticVariables.pickedUpHumourLeft){
+						PickUpSound.Play ();
+					}
 					StaticVariables.pickedUpHumourLeft = true;
 					pickedUpLeft = true;
 				}
-				if((tag == "Flower")&&(!(StaticVariables.pickedUpEyeLeft||StaticVariables.pickedUpSaltLeft||StaticVariables.pickedUpHumourLeft))){
+				if((tag == "Flower")&&(!(StaticVariables.pickedUpPistonLeft||StaticVariables.pickedUpEyeLeft||StaticVariables.pickedUpSaltLeft||StaticVariables.pickedUpHumourLeft))){
+					if(!StaticVariables.pickedUpFlowerLeft){
+						PickUpSound.Play ();
+					}
 					StaticVariables.pickedUpFlowerLeft = true;
 					pickedUpLeft = true;
 				}
@@ -293,6 +327,7 @@ public class PickUp : MonoBehaviour {
 			rigidBody.useGravity = false;
 			transform.rotation.eulerAngles.Set (0.0f,0.0f,0.0f);
 			rigidBody.freezeRotation = true;
+			rigidbody.velocity = new Vector3(0,0,0);
 
 		}else{
 			rigidBody.useGravity = true;
@@ -312,7 +347,7 @@ public class PickUp : MonoBehaviour {
 
 			}
 			if(StaticVariables.inMortarEye){
-				crushedAmount +=Time.deltaTime;
+			//	crushedAmount +=Time.deltaTime;
 				if(crushedAmount>5.0f){
 					StaticVariables.crushedEye = true;
 				}
@@ -321,10 +356,12 @@ public class PickUp : MonoBehaviour {
 				burnedAmount+=Time.deltaTime;
 				if(burnedAmount>5.0f){
 					StaticVariables.heatedEye = true;
+						BurningSound.Play();
 				}
 				if(burnedAmount>15.0f){
 					StaticVariables.heatedEye = false;
 					StaticVariables.burntEye = true;
+						BurntSound.Play();
 				}
 			}
 			if(StaticVariables.DestroyEye){
@@ -341,7 +378,7 @@ public class PickUp : MonoBehaviour {
 				
 			}
 			if(StaticVariables.inMortarSalt){
-				crushedAmount +=Time.deltaTime;
+			//	crushedAmount +=Time.deltaTime;
 				if(crushedAmount>5.0f){
 					StaticVariables.crushedSalt = true;
 				}
@@ -350,10 +387,13 @@ public class PickUp : MonoBehaviour {
 				burnedAmount+=Time.deltaTime;
 				if(burnedAmount>5.0f){
 					StaticVariables.heatedSalt = true;
+						BurningSound.Play();
+					
 				}
 				if(burnedAmount>15.0f){
 					StaticVariables.heatedSalt = false;
 					StaticVariables.burntSalt = true;
+						BurntSound.Play();
 				}
 			}
 			if(StaticVariables.DestroySalt){
@@ -369,7 +409,7 @@ public class PickUp : MonoBehaviour {
 				
 			}
 			if(StaticVariables.inMortarHumour){
-				crushedAmount +=Time.deltaTime;
+				//crushedAmount +=Time.deltaTime;
 				if(crushedAmount>5.0f){
 					StaticVariables.crushedHumour = true;
 				}
@@ -378,10 +418,12 @@ public class PickUp : MonoBehaviour {
 				burnedAmount+=Time.deltaTime;
 				if(burnedAmount>5.0f){
 					StaticVariables.heatedHumour = true;
+						BurningSound.Play();
 				}
 				if(burnedAmount>15.0f){
 					StaticVariables.heatedHumour = false;
 					StaticVariables.burntHumour = true;
+						BurntSound.Play();
 				}
 			}
 			if(StaticVariables.DestroyHumour){
@@ -398,7 +440,7 @@ public class PickUp : MonoBehaviour {
 
 			}
 			if(StaticVariables.inMortarFlower){
-				crushedAmount +=Time.deltaTime;
+				//crushedAmount +=Time.deltaTime;
 				if(crushedAmount>5.0f){
 					StaticVariables.crushedFlower = true;
 				}
@@ -407,10 +449,12 @@ public class PickUp : MonoBehaviour {
 				burnedAmount+=Time.deltaTime;
 				if(burnedAmount>5.0f){
 					StaticVariables.heatedFlower = true;
+						BurningSound.Play();
 				}
 				if(burnedAmount>15.0f){
 					StaticVariables.heatedFlower = false;
 					StaticVariables.burntFlower = true;
+						BurntSound.Play();
 				}
 			}
 			if(StaticVariables.DestroyFlower){
@@ -424,24 +468,31 @@ public class PickUp : MonoBehaviour {
 
 		if(StaticVariables.inPelicanHumour&&StaticVariables.heatedHumour&&StaticVariables.inPelicanEye&&StaticVariables.crushedEye&&StaticVariables.inPelicanSalt&&StaticVariables.crushedSalt){
 			StaticVariables.LaxativePotionCreated = true;
+			PelicanSound.Play();
 		}
 		else if(StaticVariables.inPelicanHumour&&StaticVariables.heatedHumour&&StaticVariables.inPelicanFlower&&StaticVariables.crushedFlower){
 			StaticVariables.PomadePotionCreated = true;
+			PelicanSound.Play();
 		}
 		else if(StaticVariables.inPelicanSalt&&StaticVariables.inPelicanFlower&&StaticVariables.heatedFlower&&StaticVariables.crushedSalt){
 			StaticVariables.SalvePotionCreated = true;
+			PelicanSound.Play();
 		}
 		else if(StaticVariables.inPelicanEye&&StaticVariables.inPelicanFlower&&StaticVariables.heatedFlower&&StaticVariables.crushedEye){
 			StaticVariables.AgilityPotionCreated = true;
+			PelicanSound.Play();
 		}
 		else if(StaticVariables.inPelicanFlower&&StaticVariables.heatedFlower){
 			StaticVariables.AntidotePotionCreated = true;
+			PelicanSound.Play();
 		}
 		else if(StaticVariables.inPelicanEye&&StaticVariables.heatedEye){
 			StaticVariables.ManaPotionCreated = true;
+			PelicanSound.Play();
 		}
 		else if(StaticVariables.inPelicanFlower&&StaticVariables.crushedFlower){
 			StaticVariables.HealthPotionCreated = true;
+			PelicanSound.Play();
 		}
 
 

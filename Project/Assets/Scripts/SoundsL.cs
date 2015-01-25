@@ -8,10 +8,10 @@ public class SoundsL : MonoBehaviour {
 	void OnTriggerStay(Collider other){
 		if(other.tag == "Flower"||other.tag == "Salt"||other.tag == "Humous"||other.tag == "Eyeball"){
 			if(Input.GetButtonDown ("Fire2")){
-				Pickup.Play ();
+				//Pickup.Play ();
 			}
 			if(Input.GetButtonUp ("Fire2")){
-				drop.Play();
+				//drop.Play();
 			}
 			
 		}

@@ -15,6 +15,10 @@ public class StaticVariables : MonoBehaviour {
 	public static bool pickedUpSaltLeft = false;
 	public static bool pickedUpHumourLeft = false;
 	public static bool pickedUpFlowerLeft = false;
+
+	public static bool pickedUpPistonLeft = false;
+	public static bool pickedUpPistonRight = false;
+
 	public static bool heatedEye = false;
 	public static bool heatedSalt = false;
 	public static bool heatedHumour = false;
@@ -46,6 +50,7 @@ public class StaticVariables : MonoBehaviour {
 	public static bool DestroyEye = false;
 	public static bool DestroyHumour = false;
 	public static bool DestroyFlower = false;
+	public static bool DestroyPiston = false;
 
 	public static bool HealthPotionCreated = false;
 	public static bool ManaPotionCreated = false;
