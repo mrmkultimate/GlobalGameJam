@@ -24,7 +24,7 @@ public class PelicanSounds : MonoBehaviour {
 
 			pelicanSound.Play ();
 			StaticVariables.HealthPotionCreatedSound = false;
-			Object temp = Instantiate(HealthPotion,transform.position,transform.rotation);
+			Object temp = Instantiate(HealthPotion,transform.position+new Vector3(0,0.116f,0),HealthPotion.transform.rotation);
 			Destroy(temp,3.0f);
 			bottle.color = Color.red;
 		}
@@ -32,14 +32,14 @@ public class PelicanSounds : MonoBehaviour {
 
 			pelicanSound.Play ();
 			StaticVariables.ManaPotionCreatedSound = false;
-			Object temp = Instantiate(ManaPotion,transform.position,transform.rotation);
+			Object temp = Instantiate(ManaPotion,transform.position+new Vector3(0,0.116f,0),HealthPotion.transform.rotation);
 			Destroy(temp,3.0f);
 			bottle.color = Color.blue;
 		}
 		if(StaticVariables.AntidotePotionCreatedSound){
 			pelicanSound.Play ();
 			StaticVariables.AntidotePotionCreatedSound = false;
-			Object temp = Instantiate(AntidotePotion,transform.position,transform.rotation);
+			Object temp = Instantiate(AntidotePotion,transform.position+new Vector3(0,0.116f,0),HealthPotion.transform.rotation);
 			Destroy(temp,3.0f);
 			bottle.color = Color.green;
 			
@@ -47,7 +47,7 @@ public class PelicanSounds : MonoBehaviour {
 		if(StaticVariables.AgilityPotionCreatedSound){
 			pelicanSound.Play ();
 			StaticVariables.AgilityPotionCreatedSound = false;
-			Object temp = Instantiate(AgilityPotion,transform.position,transform.rotation);
+			Object temp = Instantiate(AgilityPotion,transform.position+new Vector3(0,0.116f,0),HealthPotion.transform.rotation);
 			Destroy(temp,3.0f);
 			bottle.color = Color.cyan;
 			
@@ -56,14 +56,14 @@ public class PelicanSounds : MonoBehaviour {
 			
 			pelicanSound.Play ();
 			StaticVariables.SalvePotionCreatedSound = false;
-			Object temp = Instantiate(SalvePotion,transform.position,transform.rotation);
+			Object temp = Instantiate(SalvePotion,transform.position+new Vector3(0,0.116f,0),HealthPotion.transform.rotation);
 			Destroy(temp,3.0f);
 			bottle.color = Color.yellow;
 		}
 		   if(StaticVariables.PomadePotionCreatedSound){
 			pelicanSound.Play ();
 			StaticVariables.PomadePotionCreatedSound = false;
-			Object temp = Instantiate(PomadePotion,transform.position,transform.rotation);
+			Object temp = Instantiate(PomadePotion,transform.position+new Vector3(0,0.116f,0),HealthPotion.transform.rotation);
 			Destroy(temp,3.0f);
 			bottle.color = Color.magenta;
 			
@@ -72,7 +72,7 @@ public class PelicanSounds : MonoBehaviour {
 			
 			pelicanSound.Play ();
 			StaticVariables.LaxativePotionCreatedSound = false;
-			Object temp = Instantiate(LaxativePotion,transform.position,transform.rotation);
+			Object temp = Instantiate(LaxativePotion,transform.position+new Vector3(0,0.116f,0),HealthPotion.transform.rotation);
 			Destroy(temp,3.0f);
 			bottle.color = new Color32(79,26,66,255);
 
